@@ -135,7 +135,6 @@ exports.deleteHospital = async (req, res, next) => {
 };
 
 exports.getVacCenters = (req, res, next) => {
-	console.log("ctrl")
 	VacCenter.getAll((err, data) => {
 		if (err)
 			res.status(500).send({

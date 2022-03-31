@@ -20,7 +20,7 @@ const appointments = require("./routes/appointments");
 
 const limiter = rateLimit({
 	windowsMs: 10 * 60 * 1000,
-	max: 1,
+	max: 100,
 });
 
 const app = express();
